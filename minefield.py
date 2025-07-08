@@ -30,9 +30,13 @@ while True:
         "Digite a coluna que deseja [1-3]: "
         )) - 1
     
+    print (
+        "\n◃───────────────────────────▹\n"
+    )
+    
     if campo_minado[linha_pessoa][coluna_pessoa] == "💎": 
         print (
-            "Você já fez essa jogada. Tente Novamente.\n==========="
+            "Você já fez essa jogada. Tente Novamente.\n\n◃───────────────────────────▹\n\n"
         )
         continue 
 
