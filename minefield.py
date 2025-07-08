@@ -25,9 +25,16 @@ while True:
     linha_pessoa = int(input(
         "Digite a linha que deseja [1-3]: "
         )) - 1
+    
     coluna_pessoa = int(input(
         "Digite a coluna que deseja [1-3]: "
         )) - 1
+    
+    if campo_minado[linha_pessoa][coluna_pessoa] == "💎": 
+        print (
+            "Você já fez essa jogada. Tente Novamente.\n==========="
+        )
+        continue 
 
     if not tem_bomba(campo_minado) and jogadas == 8: 
         print (
