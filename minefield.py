@@ -1,9 +1,9 @@
 from random import randint
 
 campo_minado = [
-    ["⚫", "⚫", "⚫"],
-    ["⚫", "⚫", "⚫"],
-    ["⚫", "⚫", "⚫"],
+    ["⬛", "⬛", "⬛"],
+    ["⬛", "⬛", "⬛"],
+    ["⬛", "⬛", "⬛"],
 ]
 
 def tem_bomba(campo):
@@ -40,7 +40,7 @@ while True:
         )
         continue 
 
-    if not tem_bomba(campo_minado) and jogadas == 8: 
+    if not tem_bomba(campo_minado) and jogadas == 7: 
         print (
             "Você ganhou!!"
         )
