@@ -44,7 +44,7 @@ while True:
         print (
             "Você ganhou!!"
         )
-        campo_minado[linha_pessoa][coluna_pessoa] = "💣"
+        campo_minado[linha_mina_errada][coluna_mina_errada] = "💣"
 
     elif linha_pessoa == linha_mina_errada and coluna_pessoa == coluna_mina_errada:
         print(
